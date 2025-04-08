@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/cards.css" />
+        <title>Opdracht 4 - JS toets</title>
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <a href="../index.html" class="link">Start pagina</a>
+            <a href="../page-1/assignment-1.html" class="link">Opdracht 1</a>
+            <a href="../page-2/assignment-2.html" class="link">Opdracht 2</a>
+            <a href="../page-3/assignment-3.html" class="link">Opdracht 3</a>
+            <a href="../page-4/assignment-4.html" class="link active">Opdracht 4</a>
+            <a href="/end.html" class="link">Tot slot</a>
+        </nav>
+        <main class="main">
+            <h1>Opdracht 4 - Films Favoriet Maken (classList)</h1>
+            <p>
+                <strong>Doel:</strong> Je hebt een lijst van films in de HTML. Bij elke film staat een knop "Favoriet". Wanneer je
+                op die knop klikt, voeg of verwijder je de class <code>favorite</code> van het bijbehorende film-item. Hierdoor
+                verandert de achtergrondkleur (zoals in de CSS).
+            </p>
+
+            <p>
+                <strong>Stappenplan:</strong>
+            </p>
+            <ol>
+                <li>
+                    <strong>Stap (a):</strong> Gebruik <code>document.querySelectorAll</code> om alle buttons met class "fav-btn"
+                    te selecteren.
+                </li>
+                <li>
+                    <strong>Stap (b):</strong> Zet een click-event op elke button met een <code>for</code>-loop. In deze event
+                    listener toggle je de class "favorite" op de button.
+                </li>
+                <li>
+                    <strong>Stap (c):</strong> (Optioneel) Toon een alert of console.log om te laten weten dat de film nu favoriet
+                    is, of niet meer.
+                </li>
+            </ol>
+
+            <div class="film-item">
+                <span>The Godfather</span>
+                <button class="fav-btn">Favorite</button>
+            </div>
+            <div class="film-item">
+                <span>Titanic</span>
+                <button class="fav-btn">Favorite</button>
+            </div>
+            <div class="film-item">
+                <span>Avengers: Endgame</span>
+                <button class="fav-btn">Favorite</button>
+            </div>
+            <div class="film-item">
+                <span>Inception</span>
+                <button class="fav-btn">Favorite</button>
+            </div>
+        </main>
+        <script src="../js/assignment-4.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/classes.css" />
+        <title>Opdracht 3 - JS toets</title>
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <a href="../index.html" class="link">Start pagina</a>
+            <a href="../page-1/assignment-1.html" class="link">Opdracht 1</a>
+            <a href="../page-2/assignment-2.html" class="link">Opdracht 2</a>
+            <a href="../page-3/assignment-3.html" class="link active">Opdracht 3</a>
+            <a href="../page-4/assignment-4.html" class="link">Opdracht 4</a>
+            <a href="/end.html" class="link">Tot slot</a>
+        </nav>
+        <main class="main">
+            <h1>Opdracht 3 - Local Storage & JSON</h1>
+            <p>
+                <strong>Doel:</strong> Vraag aan de gebruiker om zijn/haar naam en leeftijd. Maak een object met deze data en sla
+                deze op in <code>localStorage</code>.
+            </p>
+
+            <p>
+                Als de gebruiker de pagina verlaat en weer terugkomt, moet deze data worden gelezen uit
+                <code>localStorage</code> en in een alert worden getoond. Voor extra punten: maak een knop die de data uit
+                <code>localStorage</code> verwijdert.
+            </p>
+
+            <input type="text" id="nameInput" placeholder="Jouw naam" />
+            <input type="number" id="ageInput" placeholder="Jouw leeftijd" />
+            <button id="saveBtn">Opslaan</button>
+            <button id="deleteBtn">verwijder</button>
+        </main>
+        <script src="../js/assignment-3.js"></script>
+    </body>
+</html>
