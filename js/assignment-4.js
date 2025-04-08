@@ -18,7 +18,10 @@ const buttons = document.querySelectorAll(".fav-btn");
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function () {
-        this.parentElement.classList.toggle("favorite");
-        console.log(`${this.previousElementSibling.textContent} is nu ${this.parentElement.classList.contains("favorite") ? "favoriet" : "geen favoriet meer"}.`);
+        const filmItem = this.parentElement;
+        filmItem.classList.toggle("favorite");
+        const filmName = filmItem.querySelector("span").textContent;
+        console.log(`${filmName} is nu ${filmItem.classList.contains("favorite") ? "favoriet" : "geen favoriet meer"}.`);
     });
 }
+
